@@ -1,12 +1,12 @@
-<div class="header pb-8 pt-5 pt-md-7" style="background-color: rgb(168, 236, 233);">
+<div class="header pb-8 pt-5 pt-md-7">
   <div class="container-fluid mb-3">
     <div class="header-body">
       <!-- Card stats -->
       <div class="row">
-        <div class="col-md-10">
+        <div class="col-md-9">
           <h1 style="color: rgb(16, 52, 66);"><b>Dashboard</b></h1><br>
         </div>
-        <div class="col-md-2">
+        <div class="col-md-2 ml-1">
           <button mat-fab style="background-color: rgb(52, 164, 192);">
             <mat-icon style="color: white; transform: scale(2);">add</mat-icon>
           </button>
@@ -27,8 +27,8 @@
           <div class="row">
             <div class="col-4">
               <mat-card style="border-radius: 15%; background-color: white;">
-                <mat-card-header>
-                  <mat-card-title style="color: rgb(16, 52, 66); margin: 4%;">Terraliving Branding, Website and Illustration</mat-card-title>
+                <mat-card-header style="color: rgb(16, 52, 66); margin: 4%;">
+                  <b>Terraliving Branding, Website and Illustration</b>
                 </mat-card-header>
                 <mat-card-content>
                   <p style="color: rgb(72, 78, 78); margin: 8%;">Terraliving is bio lab that focus on creating ecosystem to bring...</p>
@@ -49,8 +49,8 @@
             </div>
             <div class="col-4">
               <mat-card style="border-radius: 15%; background-color: white;">
-                <mat-card-header>
-                  <mat-card-title style="color: rgb(16, 52, 66); margin: 4%;">Eyegineering 3D Website Illustration</mat-card-title>
+                <mat-card-header style="color: rgb(16, 52, 66); margin: 4%;">
+                  <b>Eyegineering 3D Website Illustration</b>
                 </mat-card-header>
                 <mat-card-content>
                   <p style="color: rgb(72, 78, 78); margin: 8%;">Most people doesn't take attention on their ayes whether...</p>
@@ -71,8 +71,8 @@
             </div>
             <div class="col-4">
               <mat-card style="border-radius: 15%; background-color: white;">
-                <mat-card-header>
-                  <mat-card-title style="color: rgb(16, 52, 66); margin: 4%;">Naturalicious Website Design and Development</mat-card-title>
+                <mat-card-header style="color: rgb(16, 52, 66); margin: 4%;">
+                  <b>Naturalicious Website Design and Development</b>
                 </mat-card-header>
                 <mat-card-content>
                   <p style="color: rgb(72, 78, 78); margin: 8%;">Naturalicious is company that focus to make people gain nutri...</p>
@@ -109,15 +109,16 @@
 <div class="container-fluid mt--7" style="background-color: rgb(168, 236, 233);">
   <div class="row">
     <div class="col-xl-6">
-      <div class="card" style="background-color: rgb(168, 236, 233); border: transparent;">
-        <div class="card-header bg-transparent">
+      <mat-card style="background-color: rgb(168, 236, 233); border: transparent;">
+        <mat-card-content style="background-color: bg-transparent;">
           <div class="row align-items-center mb-5">
             <div class="col-9">
               <h2 class="mb-0" style="color: rgb(16, 52, 66);">Project Overview</h2>
             </div>
             <div class="col-3">
-              <button class="favorite styled" type="button" style="border: transparent; height: 50px; border-radius: 12px; background-color: white; color: rgb(16, 52, 66); cursor: pointer;">
-                This month &#x25BC;</button>
+              <button mat-flat-button style="background-color: rgb(255, 255, 255); border-radius: 15%; height: 10%;">
+                This month &#x25BC;
+              </button>
             </div>
           </div>
           <div class="row align-items-center">
@@ -146,18 +147,15 @@
               </div>
             </div>
           </div>
-        </div>
-        <div class="card-body" style="border: transparent; border-right: 1px solid rgb(209, 209, 209);">
-          <!-- Chart -->
-          <div class="chart">
+          <div class="chart mt-3" style="border: transparent; border-right: 1px solid rgb(209, 209, 209);">
             <canvas id="chart-orders" class="chart-canvas"></canvas>
           </div>
-        </div>
-      </div>
+        </mat-card-content>
+      </mat-card>
     </div>
     <div class="col-xl-6">
-      <div class="card" style="background-color: rgb(168, 236, 233); border: transparent;">
-        <div class="card-header bg-transparent">
+      <mat-card style="background-color: rgb(168, 236, 233); border: transparent;">
+        <mat-card-content class="bg-transparent">
           <div class="row align-items-center mb-4">
             <div class="col-9">
               <h2 class="mb-0" style="color: rgb(16, 52, 66);">Recent Activity</h2>
@@ -216,8 +214,8 @@
               </div>
             </div>
           </div>
-        </div>
-      </div>
+        </mat-card-content>
+      </mat-card>
     </div>
   </div>
 </div>
