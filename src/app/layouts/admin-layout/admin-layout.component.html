@@ -1,13 +1,11 @@
 <!-- Sidenav -->
 <app-sidebar></app-sidebar>
-<div class="container" style="background-color:rgb(168, 236, 233); max-width: 100%;">
-  <div class="main-content">
-    <!-- Top navbar -->
-    <app-navbar></app-navbar>
-    <!-- Pages -->
-    <router-outlet></router-outlet>
-    <div class="container-fluid" style="background-color:rgb(168, 236, 233);">
-      <app-footer></app-footer>
-    </div>
-  </div>
+<div class="main-content"> <!--style="position: fixed;" Pour les problèmes de dezoom ?-->
+  <!-- Top navbar -->
+  <app-navbar></app-navbar>
+  <!-- Pages -->
+  <router-outlet></router-outlet>
+  <!--<div style="background-color:rgb(168, 236, 233);">
+    <app-footer></app-footer>
+  </div>-->
 </div>
