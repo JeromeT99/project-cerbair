@@ -6,11 +6,16 @@ import { FooterComponent } from './footer/footer.component';
 import { RouterModule } from '@angular/router';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
+import { MatButtonModule } from '@angular/material/button';
+import { MatIconModule } from '@angular/material/icon';
+
 @NgModule({
   imports: [
     CommonModule,
     RouterModule,
-    NgbModule
+    NgbModule,
+    MatButtonModule,
+    MatIconModule
   ],
   declarations: [
     FooterComponent,
@@ -20,7 +25,9 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
   exports: [
     FooterComponent,
     NavbarComponent,
-    SidebarComponent
+    SidebarComponent,
+    MatButtonModule,
+    MatIconModule
   ]
 })
 export class ComponentsModule { }

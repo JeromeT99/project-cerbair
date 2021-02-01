@@ -1,4 +1,3 @@
-import { ɵallowPreviousPlayerStylesMerge } from '@angular/animations/browser';
 import { Component, OnInit } from '@angular/core';
 import Chart from 'chart.js';
 

@@ -10,13 +10,14 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 import { AppRoutingModule } from './app.routing';
 import { ComponentsModule } from './components/components.module';
-
+import { DashboardModule } from './pages/dashboard/dashboard.module';
 
 @NgModule({
   imports: [
     BrowserAnimationsModule,
     FormsModule,
     ComponentsModule,
+    DashboardModule,
     NgbModule,
     RouterModule,
     AppRoutingModule
